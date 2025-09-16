@@ -1,8 +1,37 @@
-<html>
-    Thu Ta Naing
-    <h1>
-         This is heading
-    </h1>
-    <p>This is a paragraph</p>
-    <a href="https://www.google.com/">Thi is google link </a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Thuta</title>
+</head>
+<body>
+  <h1>Head and Tail project</h1>
+
+  <h2 id="coinFace">Head</h2>
+
+  <button id="flipButton">Flip</button>
+
+</body>
+<script>
+    const coinFaceElement = document.getElementById("coinFace");
+    const flipButtonElement = document.getElementById("flipButton");
+
+    flipButtonElement.onclick = () =>
+    {
+        const randomNumber = Math.floor(Math.random() *2);
+        if(randomNumber===0)
+    {
+        console.log("Head");
+        
+        coinFaceElement.innerText = "Head";
+    }
+    else if(randomNumber===1)
+        {
+            console.log("Tail");
+            
+            coinFaceElement.innerText = "Tail";
+        }
+    
+    };
+</script>
 </html>
