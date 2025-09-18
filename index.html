@@ -4,12 +4,33 @@
     
     <title>Thuta</title>
 </head>
+<style>
+    h1{
+        color:aqua;
+    }
+    img{
+        width:350px;
+        border-radius:100% ;
+    }
+    body{
+        background-color: black;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+</style>
 <body>
-  <h1>Head and Tail project</h1>
 
-  <h2 id="coinFace">Head</h2>
+  <div>
+    <h1>Head and Tail project</h1>
 
+  <!-- <h2 id="coinFace">Head</h2> -->
+  <img id="coinFace" src="Head.jpg" >
+    <br>
   <button id="flipButton">Flip</button>
+  </div>
 
 </body>
 <script>
@@ -22,14 +43,14 @@
         if(randomNumber===0)
     {
         console.log("Head");
+        coinFaceElement.src="Head.jpg";
         
-        coinFaceElement.innerText = "Head";
     }
     else if(randomNumber===1)
         {
             console.log("Tail");
+            coinFaceElement.src="Tail.jpg";
             
-            coinFaceElement.innerText = "Tail";
         }
     
     };
